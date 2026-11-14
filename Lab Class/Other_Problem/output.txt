@@ -1,0 +1,2 @@
+Enter day number from 1 to 7
+Enter valid day number from 1 to 7
