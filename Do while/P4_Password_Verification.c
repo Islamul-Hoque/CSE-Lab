@@ -9,8 +9,7 @@ int main() {
         if (scanf("%d", &n) != 1) {
             printf("Invalid input! Enter numbers only.\n");
 
-            while (getchar() != '\n');
-            continue;
+            return 1;
         }
 
         if (pass != n)
