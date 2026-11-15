@@ -1,21 +1,70 @@
 // #include <stdio.h>
 
 // int main() {
-//     int n, count=1;
+//     int n;
 //     scanf("%d", &n);
-//     for (int i = 1; i <=n; i++){
-//         for (int k = 1; k <=n-i; k++){
+
+//     // Upper Pyramid
+//     for (int i = 1; i <= n; i++) {
+//         for (int k = 1; k <= n-i; k++) {
 //             printf(" ");
 //         }
-//         for (int j = 1; j <=2*i-1; j++){
-//             printf("%d", count);
-//             count++;
+//         for (int j = 1; j <= 2*i-1; j++) {
+//             printf("*");
 //         }
 //         printf("\n");
 //     }
-    
+
+//     // Lower Inverted Pyramid
+//     for (int i = n-1; i >= 1; i--) {
+//         for (int k = 1; k <= n-i; k++) {
+//             printf(" ");
+//         }
+//         for (int j = 1; j <= 2*i-1; j++) {
+//             printf("*");
+//         }
+//         printf("\n");
+//     }
+
 //     return 0;
 // }
+
+
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++) {
+        for (int k = n-i; k >= 1; k--) {
+            printf(" ");
+        }
+        for (int j = 1; j <= i; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+
+    for (int i = n-1; i >= 1; i--) {
+        for (int k = n-i; k >= 1; k--) {
+            printf(" ");
+        }
+        for (int j = 1; j <= i; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+
+
+
+
 
 
 
@@ -82,23 +131,23 @@
 
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    int n, sum=0;
-    scanf("%d", &n);
+// int main() {
+//     int n, sum=0;
+//     scanf("%d", &n);
 
-    for (int i = 1; i < n; i++){
-        if(n%i == 0){
-            sum+=i;
-        }
-    }
-    if(n>0 && sum ==n)
-        printf("%d is perfect number",n);
-    else 
-        printf("%d is not perfect number", n);
-    return 0;
-}
+//     for (int i = 1; i < n; i++){
+//         if(n%i == 0){
+//             sum+=i;
+//         }
+//     }
+//     if(n>0 && sum ==n)
+//         printf("%d is perfect number",n);
+//     else 
+//         printf("%d is not perfect number", n);
+//     return 0;
+// }
 
 
 // 0 is an Armstrong Number, but it is not a Perfect Number.
