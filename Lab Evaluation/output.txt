@@ -1,0 +1,2 @@
+Enter your marks: 
+Enter your mark between 1 to 100
