@@ -60,8 +60,7 @@ int main() {
         case 8:
         case 10:
         case 12:
-            if (d >= 1 && d <= 31)
-                d_count = 1;
+            if (d >= 1 && d <= 31) d_count = 1;
             break;
 
         // 30 days
@@ -69,19 +68,16 @@ int main() {
         case 6:
         case 9:
         case 11:
-            if (d >= 1 && d <= 30)
-                d_count = 1;
+            if (d >= 1 && d <= 30) d_count = 1;
             break;
 
         // February
         case 2:
             if (y % 400 == 0 || (y % 4 == 0 && y % 100 != 0)) {
-                if (d >= 1 && d <= 29)
-                    d_count = 1;
+                if (d >= 1 && d <= 29) d_count = 1;
             }
             else {
-                if (d >= 1 && d <= 28)
-                    d_count = 1;
+                if (d >= 1 && d <= 28) d_count = 1;
             }
             break;
     }
