@@ -86,10 +86,8 @@ int main() {
             break;
     }
 
-    if (d_count == 1)
-        printf("Valid");
-    else
-        printf("Invalid");
+    if (d_count == 1) printf("Valid");
+    else printf("Invalid");
 
     return 0;
 }
